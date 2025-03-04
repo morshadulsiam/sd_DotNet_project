@@ -1,0 +1,126 @@
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid lightblue; 
+}
+
+
+.mb-3 {
+    margin-bottom: 2px; 
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+}
+
+    .mb-3 label {
+        width: 100px;
+        text-align: left;
+        padding: 5px;
+        background-color: lightblue;
+    }
+
+    .mb-3 input,
+    .mb-3 select {
+        flex-grow: 1;
+        
+    }
+
+
+body{
+    background-color: #fff;
+}
+
+.text-area {
+    position: relative; 
+    margin-left: 30%;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#upload_container{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+#upload_container form{
+    display: flex;
+    flex-direction: column;
+}
+
+#upload_container form input{
+    padding: 6px;
+    outline: none;
+    border: 1px solid lightblue;
+    margin-bottom: 5px;
+}
+
+    #upload_container form label {
+        width: 35%;
+        padding: 8px;
+        outline: none;
+        background-color: white;
+        border: 1px solid lightblue;
+        margin-bottom: 1px;
+        cursor: pointer;
+    }
+
+#upload_container form input[type="submit"]{
+    background-color: lightblue;
+    border: none;
+}
+
+#upload_container form input[type="submit"]:hover{
+    background-color: rgb(206, 197, 233);
+    cursor: pointer;
+    border: 1px solid lightblue;
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.icon-wrapper i {
+    font-size: 1.5rem; 
+    color: #000;
+}
+
+.alert {
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.alert i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+.logo-middle {
+    position: absolute;
+        display: flex;
+        top: 10px;
+        right: 20px;
+        z-index: 10;
+}
+.logo-middle-img {
+        height: 100px;
+        width: 120px;
+}

@@ -1,0 +1,104 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Crud.web.Models.Entities.Pet
+
+<head>
+    <link rel="stylesheet" href="~/css/Upload.css" asp-append-version="true" />
+    <style>
+        body {
+            background-image: url("/New/B.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #upload_container {
+            margin: 1% 0 0 3%;
+            width: 50%;
+            position: relative;
+        }
+
+        .text-area {
+            position: relative;
+            margin-left: 40%;
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section id="upload_container">
+
+        <form class="shadow w-450 p-3"
+              method="post" class="rounded bg-white shadow p-5"
+              enctype="multipart/form-data">
+
+         <div class="icon-wrapper">
+                <a asp-controller="Pets" asp-action="List">
+                    <i class="fa-regular fa-circle-left fa-2x"></i>
+                </a>
+         </div>
+
+            <div class="text-area">
+                <div class="text mb-5">
+                    <h3>Edit Post</h3>
+                </div>
+            </div>
+
+
+        <div class="mb-3">
+                <label class="form-label">Pet Catagory</label>
+                <select asp-for="PetCatagory" name="PetCatagory" id="PetCatagory" class="form-control" required>
+                <option value="" disabled selected>Select pet</option>
+                <option>Cat</option>
+                <option>Dog</option>
+                <option>Fish</option>
+                <option>Bird</option>
+                <option>Rabbit</option>
+                <option>Hamster</option>
+                <option>Turtle</option>
+            </select>
+        </div>
+
+
+            <div class="mb-3">
+                <label class="form-label">Pet Age</label>
+                <input type="text" asp-for="PetAge" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="text" asp-for="Phone" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="text" asp-for="Description" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Update Picture</label>
+                <input type="file" asp-for="ImageFile" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                
+                @if (!string.IsNullOrEmpty(Model.ImagePath))
+                {
+                    <img src="@Model.ImagePath" width="50px" />
+                }
+                <input type="hidden" asp-for="ImagePath" />
+            </div>
+
+            <input type="submit" value="Update" name="update_btn">
+
+    </form>
+    </section>
+</body>
+

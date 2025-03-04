@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Crud.web.Models.PetViewModel
+
+<head>
+
+    <link rel="stylesheet" href="~/css/Upload.css" asp-append-version="true" />
+<style>
+    body {
+        background-image: url("/New/B.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #upload_container {
+        margin: 1% 0 0 3%;
+        width: 50%;
+        position: relative;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <section id="upload_container">
+            <form class="shadow w-450 p-3" 
+            method="post" enctype="multipart/form-data">
+
+              <div class="text-area">
+                 <div class="text mb-5">
+                     <h3>Give Adoption</h3>
+                 </div>
+              </div>
+
+                <div class="icon-wrapper">
+                    <a asp-controller="Home" asp-action="Index">
+                        <i class="fa-regular fa-circle-left fa-2x"></i>
+                    </a>
+                </div>
+
+    <div class="mb-3">
+        <select name="petcatagory" id="petcatagory" required>
+            <option value="" disabled selected>Select pet</option>
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Fish</option>
+            <option>Bird</option>
+            <option>Rabbit</option>
+            <option>Hamster</option>
+            <option>Turtle</option>
+        </select>
+    </div>
+
+                <div class="mb-3">
+                    <input type="text" name="PetAge" id="PetAge" placeholder="Pet Age" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" name="Description" id="Description" placeholder="Description" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" name="Phone" id="Phone" placeholder="Contact Information">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label mb-2">Upload Picture</label>
+                    <input type="file" name="ImageFile" class="form-control" required>
+                </div>
+
+    <input type="submit" value="Upload" name="submit">
+
+
+
+</form>
+        </section>
+    </header>
+</body>

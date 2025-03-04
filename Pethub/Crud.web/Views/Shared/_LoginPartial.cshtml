@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<Users> signInManager;
+
+    @if (signInManager.IsSignedIn(User))
+    { 
+		<div class="nav-links">
+		    <a asp-controller="Pets" asp-action="List"><i class="fa-solid fa-circle-info"></i> Upload Details</a>
+			<a asp-controller="Pets" asp-action="Add">Upload</a>
+		</div>
+
+	<div class="nav-buttons">
+		<form asp-controller="Pets" asp-action="AdoptedPets" method="get">
+			<button type="submit" class="adopt"> Adopted Pet </button>
+		</form>
+	</div>
+
+	<div class="nav-buttons">
+		<form asp-controller="Account" asp-action="Profile" method="get">
+			<button type="submit" class="profile"> Profile </button>
+		</form>
+	</div>
+	
+	<div class="nav-buttons">
+		<button type="button" class="logout" onclick="showLogoutModal()">
+			<i class="fa-solid fa-right-from-bracket"></i> Log out
+		</button>
+	</div>
+
+
+	
+    }
+
+    else
+    {
+	    
+		<div class="nav-buttons">
+			   <form asp-controller="Account" asp-action="Register" method="get" style="display: inline-block;">
+				    <button type="submit" class="signup">Sign up</button>
+			   </form>
+
+			   <form asp-controller="Account" asp-action="Login" method="get" style="display: inline-block;">
+				    <button type="submit" class="login">Log in</button>
+			   </form>
+
+		</div>
+		
+    }
+
+

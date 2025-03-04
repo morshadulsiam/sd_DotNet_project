@@ -1,0 +1,61 @@
+﻿@using Crud.web.ViewModels;
+@model VerifyEmailViewModel;
+
+@{
+    ViewData["Title"] = "Verify Email";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Account.css" asp-append-version="true">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login_box">
+            <div class="verify-header">
+                <span>Verify Email</span>
+
+                <div class="icon-wrapper">
+                    <a asp-controller="Account" asp-action="login">
+                        <i class="fa-regular fa-circle-left fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="shadow w-450 p-3" method="post" asp-controller="Account" asp-action="VerifyEmail">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="input_box">
+                    <input type="text"
+                           id="Email"
+                           class="input-field"
+                           asp-for="Email"
+                           required>
+                    <label asp-for="Email" class="label">Email Address</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+              
+
+                <div class="input_box">
+                    <input type="submit"
+                           class="input-submit"
+                           value="Verify">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+        }
+
+    }
+</body>
+

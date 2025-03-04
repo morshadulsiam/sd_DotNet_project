@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Pethub.web</title>
+
+    <!-- Bootstrap & Custom Styles -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Footer.css" asp-append-version="true" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Modern Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="logo">
+            <a>
+                <img src="~/New/redpethub.png" alt="Logo" style="width:100px; height: 70px;">
+            </a>
+        </div>
+        
+
+        <div class="search-bar">
+            <form asp-controller="Home" asp-action="Search" method="get" style="display: flex; align-items: center;">
+                <input name="query" placeholder="What are you looking for?" />
+                <div class="dropdown">
+                    <button type="button" class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter Search Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#" data-query="cat">Cat</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="dog">Dog</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="fish">Fish</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="bird">Bird</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="rabbit">Rabbit</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="hamster">Hamster</a></li>
+                        <li><a class="dropdown-item" href="#" data-query="turtle">Turtle</a></li>
+                    </ul>
+                </div>
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+
+
+        <div class="nav-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </div>
+        
+         <partial name ="_LoginPartial" />
+
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="margin-top: 80px;">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Confirm Logout</h2>
+            <p>Are you sure you want to logout?</p>
+            <div class="modal-buttons">
+                <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                    <button type="submit" class="yes-button">Yes</button>
+                </form>
+                <button class="no-button" onclick="closeLogoutModal()">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+  	 <div class="containerf">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CATEGORIES</h4>
+  	 			<ul>
+                    <li><a asp-controller="Pets" asp-action="Add">Upload Pet</a></li>
+            
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>QUICK LINKS</h4>
+  	 			<ul>
+                        <li> <a asp-controller="Home" asp-action="Index">HOME</a></li>
+                        <li><a asp-controller="Home" asp-action="About">About us</a></li>
+                        <li><a asp-controller="Account" asp-action="Profile">Profile</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); showLogoutModal();">Log out</a></li>
+
+                        
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>CONTACT</h4>
+  	 			<ul>
+  	 				<li><a href="#">pethub@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>FOLLOW US</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+     <div class="bottom-bar">
+          <p>&copy; 2025 PetHub | All Rights Reserved</p>
+      </div>
+  </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+
+                const query = this.getAttribute('data-query'); // Get the category from the dropdown
+                const searchForm = document.querySelector('.search-bar form'); // Select the search form
+                const searchInput = searchForm.querySelector('input[name="query"]'); // Get the search input
+
+                searchInput.value = query; // Set the search input value to the selected category
+                searchForm.submit(); // Submit the form to trigger the search
+            });
+        });
+    </script>
+
+    <script>
+        function showLogoutModal() {
+            const modal = document.getElementById("logoutModal");
+            modal.classList.add("show");
+            setTimeout(() => {
+                modal.querySelector(".modal-content").classList.add("show");
+            }, 10);
+        }
+
+        function closeLogoutModal() {
+            const modal = document.getElementById("logoutModal");
+            modal.querySelector(".modal-content").classList.remove("show");
+            setTimeout(() => {
+                modal.classList.remove("show");
+            }, 300); // Matches transition time
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+

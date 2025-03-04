@@ -1,0 +1,28 @@
+﻿@model List<Crud.web.Models.Entities.Pet>
+
+@if (!Model.Any())
+{
+    <p>No pets found for your search.</p>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var pet in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="@pet.ImagePath" class="card-img-top" alt="Pet Image" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">@pet.PetCatagory</h5>
+                            <p class="card-text"><strong>Age:</strong> @pet.PetAge</p>
+                            <p class="card-text"><strong>Description:</strong> @pet.Description</p>
+                            <p class="card-text"><strong>Contact:</strong> @pet.Phone</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+

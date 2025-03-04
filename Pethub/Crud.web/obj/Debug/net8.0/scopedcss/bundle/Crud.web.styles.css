@@ -1,0 +1,97 @@
+/* _content/Crud.web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body[b-8g3vfettsw] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar[b-8g3vfettsw] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+    .navbar .logo[b-8g3vfettsw] {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar .search-bar[b-8g3vfettsw] {
+        display: flex;
+        align-items: center;
+        background: #eee;
+        padding: 8px 15px;
+        border-radius: 50px;
+    }
+
+        .navbar .search-bar input[b-8g3vfettsw] {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 5px;
+            width: 250px;
+        }
+
+        .navbar .search-bar i[b-8g3vfettsw] {
+            color: gray;
+        }
+
+    .navbar .nav-links a[b-8g3vfettsw] {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .navbar .nav-buttons button[b-8g3vfettsw] {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+.login[b-8g3vfettsw] {
+    background: black;
+    color: white;
+}
+
+.signup[b-8g3vfettsw] {
+    background: white;
+    border: 2px solid black;
+}
+
+.hero[b-8g3vfettsw] {
+    text-align: center;
+    padding: 100px;
+}
+
+.content-grid[b-8g3vfettsw] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.card[b-8g3vfettsw] {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.footer[b-8g3vfettsw] {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    margin-top: 20px;
+}
+

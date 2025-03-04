@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\1.PROJECT .NET\\Pethub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\views\\pets\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\views\\pets\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\viewmodels\\adoptedpetsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\viewmodels\\adoptedpetsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\models\\adoptedpets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\models\\adoptedpets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\viewmodels\\verifyemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\viewmodels\\verifyemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|e:\\1.project .net\\pethub\\crud.web\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4536E442-7669-4038-B609-3CF7FE75A450}|Crud.web\\Crud.web.csproj|solutionrelative:crud.web\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 98,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Crud.web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Crud.web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T05:06:22.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crud.web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Crud.web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T05:05:57.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Pets\\Add.cshtml",
+              "RelativeDocumentMoniker": "Crud.web\\Views\\Pets\\Add.cshtml",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Pets\\Add.cshtml",
+              "RelativeToolTip": "Crud.web\\Views\\Pets\\Add.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T05:05:06.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdoptedPetsViewModel.cs",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\AdoptedPetsViewModel.cs",
+              "RelativeDocumentMoniker": "Crud.web\\ViewModels\\AdoptedPetsViewModel.cs",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\AdoptedPetsViewModel.cs",
+              "RelativeToolTip": "Crud.web\\ViewModels\\AdoptedPetsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:04:55.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdoptedPets.cs",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Models\\AdoptedPets.cs",
+              "RelativeDocumentMoniker": "Crud.web\\Models\\AdoptedPets.cs",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Models\\AdoptedPets.cs",
+              "RelativeToolTip": "Crud.web\\Models\\AdoptedPets.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:04:03.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Crud.web\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Crud.web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T04:17:55.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Crud.web\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Crud.web\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:03:52.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerifyEmailViewModel.cs",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\VerifyEmailViewModel.cs",
+              "RelativeDocumentMoniker": "Crud.web\\ViewModels\\VerifyEmailViewModel.cs",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\ViewModels\\VerifyEmailViewModel.cs",
+              "RelativeToolTip": "Crud.web\\ViewModels\\VerifyEmailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T04:17:45.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VerifyEmail.cshtml",
+              "DocumentMoniker": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeDocumentMoniker": "Crud.web\\Views\\Account\\VerifyEmail.cshtml",
+              "ToolTip": "E:\\1.PROJECT .NET\\Pethub\\Crud.web\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeToolTip": "Crud.web\\Views\\Account\\VerifyEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T04:17:32.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

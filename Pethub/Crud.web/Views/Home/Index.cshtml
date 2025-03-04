@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Crud.web.Models.PetViewModel>
+@inject Microsoft.AspNetCore.Identity.UserManager<Users> userManager
+@inject Microsoft.AspNetCore.Identity.SignInManager<Users> signInManager
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Our Pethub</h1>
+    <p>Explore available pets</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var pet in Model.Where(p => !p.IsAdopted))  // Show only available pets
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="@pet.ImagePath" class="card-img-top" alt="Pet Image" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@pet.PetCatagory</h5>
+                        <p class="card-text"><strong>Age:</strong> @pet.PetAge</p>
+                        <p class="card-text"><strong>Description:</strong> @pet.Description</p>
+                        <p class="card-text"><strong>Owner:</strong> @pet.UserFullName</p>
+                        <p class="card-text"><strong>Email:</strong> @pet.UserEmail</p>
+                        <p class="card-text"><strong>Contact:</strong> @pet.Phone</p>
+
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            
+                            <form asp-controller="Pets" asp-action="Adopt" method="post">
+                                <input type="hidden" name="petId" value="@pet.Id" />
+                                <button type="submit" class="btn btn-success mt-2">Adopt</button>
+                            </form>
+
+                        }
+                        else
+                        {
+                            <p class="text-danger">Please <a asp-controller="Account" asp-action="Login">log in</a> to adopt pet.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+         }
+
+   
+    </div>
+</div>

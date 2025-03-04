@@ -1,0 +1,97 @@
+﻿@using Crud.web.ViewModels;
+@model RegisterViewModel;
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Account.css" asp-append-version="true">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="regis_box">
+            <div class="regis-header">
+                <span>Registration</span>
+
+                <div class="icon-wrapper1">
+                    <a asp-controller="Account" asp-action="login">
+                        <i class="fa-regular fa-circle-left fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="shadow w-450 p-3" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="input_box">
+                    <input type="text"
+                           id="Name"
+                           class="input-field"
+                           asp-for="Name"
+                           required>
+                    <label asp-for="Name" class="label">Full Name</label>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="input_box">
+                    <input type="text"
+                           id="Email"
+                           class="input-field"
+                           asp-for="Email"
+                           required>
+                    <label asp-for="Email" class="label">Email Address</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="pass_field">
+                    <input type="password"
+                           id="Password"
+                           class="input-field"
+                           asp-for="Password"
+                           required>
+                    <label asp-for="Password" class="label">Password</label>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="pass_field">
+                    <input type="password"
+                           id="ConfirmPassword"
+                           class="input-field"
+                           asp-for="ConfirmPassword"
+                           required>
+                    <label asp-for="ConfirmPassword" class="label">Confirm Password</label>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label mb-2" style="color: black;"> Upload Picture </label>
+                    <input type="file" name="ImageFile" class="form-control" >
+                </div>
+
+                <div class="input_box">
+                    <input type="submit"
+                           class="input-submit"
+                           value="Register">
+                </div>
+
+
+                <div class="register">
+                    <span>Already have an account? <a asp-controller="Account" asp-action="Login"> Login </a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+        }
+
+    }
+</body>
