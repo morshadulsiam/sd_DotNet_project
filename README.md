@@ -13,3 +13,5 @@ PetHub is an online platform designed to simplify the pet adoption process by co
 4. **Set up MySQL Database**:
    - Add your ConnectionString in appsettings.json.
    - Copy the server name of your device from Microsoft SQL Server.
+  
+ ## Screencast : https://drive.google.com/file/d/1B89XXgbGFClSloaxq2khs0evRh3MRzvM/view?usp=drive_link    
